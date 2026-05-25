@@ -1,0 +1,913 @@
+{
+  "schema": "captivate.fixture-library",
+  "version": 2,
+  "fixtures": [
+    {
+      "id": "j_o40e_j7kKNmGeIrOpCb",
+      "name": "150 Watt 24LED Wash Light",
+      "intensity": 0,
+      "manufacturer": "Laluce Natz",
+      "channels": [
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "hue": 0,
+            "saturation": 1,
+            "kind": "color"
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.333,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "color",
+            "hue": 0.666,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "white",
+            "hue": 0,
+            "saturation": 0
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "amber",
+            "hue": 0.11,
+            "saturation": 1
+          }
+        },
+        {
+          "type": "color",
+          "color": {
+            "kind": "uv",
+            "hue": 0.74,
+            "saturation": 1
+          }
+        }
+      ],
+      "subFixtures": [
+        {
+          "name": "Pixel Group 1",
+          "channels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 2",
+          "channels": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 3",
+          "channels": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 4",
+          "channels": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 5",
+          "channels": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 6",
+          "channels": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 7",
+          "channels": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "groups": [],
+          "intensity": 1
+        },
+        {
+          "name": "Pixel Group 8",
+          "channels": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "groups": [],
+          "intensity": 1
+        }
+      ],
+      "groups": [
+        "Washes"
+      ],
+      "model": {
+        "kind": "washBar",
+        "emittersPerSubFixture": 3,
+        "width": 1.03124,
+        "bodyShape": "box",
+        "bodyHeight": 0.06096,
+        "bodyDepth": 0.06096,
+        "bodyDiameter": 0.45,
+        "moverBeamAngleDeg": 9.5,
+        "atmosphereEffect": "fog",
+        "atmosphereNozzleDirection": "up",
+        "washBarLayoutMode": "linear",
+        "washBarWarmWhiteCount": 12,
+        "washBarCoolWhiteCount": 13,
+        "washBarRgbCount": 16,
+        "useCustomEmitterLayout": true,
+        "customEmitters": [
+          {
+            "id": "eV8RDJid9z6XjUc4duY6h",
+            "x": 0.028631178707224335,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "OvpJOSdC-Houukxzy_pxL",
+            "x": 0.06961977186311787,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "F4cVfLrWJbkDLo5k4x6ea",
+            "x": 0.1106083650190114,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "j723Esas5_YkQdX1BHvaA",
+            "x": 0.15159695817490493,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "id": "8QZGywkn7vUpnByBdnJfC",
+            "x": 0.19258555133079847,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "id": "BrshEzP90_DB-xsZaPoiB",
+            "x": 0.233574144486692,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "id": "h_Bb3HF0GXZtD5JqdwlC9",
+            "x": 0.2745627376425855,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "id": "twxqFa7IOxYpxxjrC7fP4",
+            "x": 0.3155513307984791,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "id": "HVHWJtzgyis7Tphjx93ox",
+            "x": 0.3565399239543726,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "id": "dJDPMs-WbQrSscBoJoq7v",
+            "x": 0.39752851711026616,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "id": "UxjAWpYrEL0pKIfpjqSEm",
+            "x": 0.4385171102661597,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "id": "Ppdyw6sM0S2_mDGEvFYOP",
+            "x": 0.4795057034220532,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ]
+          },
+          {
+            "id": "Od0AKlCK8Tm6sEZWhZ5W2",
+            "x": 0.5204942965779468,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "id": "wfw9QNidAvIqRm8XnA0B-",
+            "x": 0.5614828897338403,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "id": "_3FGJQCXbS4CpvzKSWsDt",
+            "x": 0.6024714828897338,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          },
+          {
+            "id": "GtrHYulCMi9WWAiYUn5Yt",
+            "x": 0.6434600760456275,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ]
+          },
+          {
+            "id": "pNwveaXWZyun6izVnDXUD",
+            "x": 0.6844486692015209,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ]
+          },
+          {
+            "id": "yoV5uMzYEH7deuGO9BcDv",
+            "x": 0.7254372623574145,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ]
+          },
+          {
+            "id": "WrVFjf9zoCwZ1L6IUVb54",
+            "x": 0.766425855513308,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          {
+            "id": "Yp275Wq9PVSEbGo4lOFWT",
+            "x": 0.8074144486692015,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          {
+            "id": "kQm9KeFm4gUCmcwBYIl-m",
+            "x": 0.8484030418250952,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          {
+            "id": "q6mzY3slBoyoBnliAGFA4",
+            "x": 0.8893916349809886,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          },
+          {
+            "id": "aKpktGkuo5CQgs8xWYfu2",
+            "x": 0.9303802281368821,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          },
+          {
+            "id": "WfcOn2tAR1zkeMVF_uD8x",
+            "x": 0.9713688212927757,
+            "y": 0.5,
+            "z": 0.72,
+            "size": 0.03842643346007604,
+            "shape": "disc",
+            "channelIndexes": [
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ]
+          }
+        ],
+        "emitterFaceAutoSize": false,
+        "parRectLayout": "grid",
+        "parCylinderLayout": "honeycomb"
+      }
+    }
+  ]
+}
