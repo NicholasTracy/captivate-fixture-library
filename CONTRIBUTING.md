@@ -2,41 +2,40 @@
 
 Thank you for sharing a Captivate fixture with the community. You do **not** need git, branches, or pull requests.
 
-## Submit from Captivate
+## Share from Captivate
 
 1. In Captivate, build and test your fixture (DMX channels, ranges, emitter layout, mover calibration if applicable).
 2. Set **Manufacturer** and **Fixture Name** on the fixture.
 3. Open **Share to Library…**
-4. Optionally add **Notes for reviewers** (hardware tested, quirks, etc.).
-5. Click **Submit to Library**.
-6. When asked, **sign in to GitHub** and enter the verification code (Captivate copies it for you).
-7. Click **OK** in Captivate after you have authorized on GitHub.
+4. Click **Share to Library**.
+5. When your browser opens, sign in on GitHub. Captivate puts a sign-in code on your **clipboard**—**paste** it on the GitHub page when asked.
+6. Captivate sends your fixture to the library. You will see confirmation in the dialog when it is sent.
 
-Captivate confirms when the pull request is opened. A GitHub Actions bot **validates and merges** it automatically — you do not approve your own PR.
+The library checks your fixture and adds it automatically. You do not approve anything yourself.
 
-See [.github/MAINTAINERS.md](.github/MAINTAINERS.md) if automation needs to be enabled on the repo.
+After it is added, others find it under **Search For Fixture Online** → **Captivate Community Library** (tap **Refresh** if needed).
 
-## Submit from the web
+## Share from the web
 
-If you cannot use the in-app submit flow:
+If you cannot use Captivate’s share flow:
 
-1. Export JSON from Captivate (**Share to Library…** → **Export JSON…**).
+1. Save a copy from Captivate (**Share to Library…** → **Save a copy…**).
 2. Open the [fixture submission form](https://github.com/NicholasTracy/captivate-fixture-library/issues/new?template=fixture-submission.yml).
-3. Enter **Manufacturer**, **Model name**, paste the JSON into **Fixture JSON**, and submit.
+3. Enter **Manufacturer**, **Model name**, paste your fixture where the form asks, and submit.
 
-## After you submit
-
-- Your submission is reviewed for sensible channel maps and naming.
-- When accepted, the fixture appears under **Captivate Community Library** in **Search For Fixture Online**.
-- Duplicate models may be discussed before merge.
+The library finishes adding your fixture from the form.
 
 ## Tips
 
-- Test on real hardware when possible, or note in **Notes** that the map is unverified.
+- Test on real hardware when possible.
 - Use clear manufacturer and model names that match the real product.
-- Do not paste copyrighted manual text into the submission.
+- Do not paste copyrighted manual text into a submission.
 
 ## Questions
 
 - [Captivate 2 Discussions](https://github.com/NicholasTracy/captivate-2/discussions)
 - [Captivate Discord](https://discord.gg/96DVPcMUUv)
+
+## For repository maintainers
+
+Automation and repo settings: [.github/MAINTAINERS.md](.github/MAINTAINERS.md)

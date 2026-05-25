@@ -10,22 +10,22 @@ Community-built [Captivate 2](https://github.com/NicholasTracy/captivate-2) fixt
 
 Also available in the same dialog: **QLC+ Fixture Library** and **Open Fixture Library**.
 
-## Submit a fixture
+## Share a fixture
 
-You do **not** need git or to open a pull request.
+You do **not** need git or to manage pull requests yourself.
 
 ### From Captivate (recommended)
 
 1. Build and test your fixture; set **Manufacturer** and **Fixture Name**.
-2. **Share to Library…** → **Submit to Library**
-3. Sign in to GitHub when prompted, then confirm in Captivate.
-4. The library bot validates and merges your pull request automatically (no self-approval needed).
+2. **Share to Library…** → **Share to Library**
+3. Sign in on the GitHub page that opens. Captivate puts a sign-in code on your clipboard—**paste** it when GitHub asks.
+4. Captivate sends your fixture to the library. The library checks it and adds it for everyone automatically.
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for details and the web-only path.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the web-only path and tips.
 
 ## Repository
 
-Fixtures live under `fixtures/{manufacturer}/{model}.json`. New submissions are validated by GitHub Actions and merged when checks pass.
+Published fixtures live under `fixtures/{manufacturer}/{model}.json`. New submissions from Captivate are checked and added automatically when valid.
 
 ## License
 
