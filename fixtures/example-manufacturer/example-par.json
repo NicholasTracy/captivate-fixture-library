@@ -1,0 +1,22 @@
+{
+  "schema": "captivate.fixture-library",
+  "version": 2,
+  "fixtures": [
+    {
+      "id": "example-par-template",
+      "name": "Example PAR",
+      "manufacturer": "Example Manufacturer",
+      "intensity": 0,
+      "channels": [
+        {
+          "type": "master",
+          "min": 0,
+          "max": 255,
+          "isOnOff": false
+        }
+      ],
+      "subFixtures": [],
+      "groups": []
+    }
+  ]
+}

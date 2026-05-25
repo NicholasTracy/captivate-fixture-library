@@ -1,0 +1,37 @@
+name: Fixture submission
+description: Submit a Captivate fixture definition (no git or pull request required)
+title: 'Fixture: '
+labels:
+  - fixture-submission
+body:
+  - type: markdown
+    value: |
+      Export from Captivate (**Share to Library…** copies JSON to your clipboard).
+      Paste below and submit — a maintainer bot will open a pull request automatically.
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      description: e.g. Chauvet, Elation, Generic
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model name
+      description: e.g. Colorado Solo, Protron 3K
+    validations:
+      required: true
+  - type: textarea
+    id: fixture-json
+    attributes:
+      label: Fixture JSON
+      description: Full JSON from Captivate export (captivate.fixture-library schema)
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Hardware tested, channel quirks, link to manual, etc.

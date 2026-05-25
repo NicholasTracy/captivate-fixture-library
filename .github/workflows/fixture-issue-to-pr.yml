@@ -1,0 +1,139 @@
+name: Fixture issue to PR
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  create-pr-from-issue:
+    if: contains(github.event.issue.labels.*.name, 'fixture-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parse submission
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body ?? '';
+            const readField = (name) => {
+              const re = new RegExp(
+                `### ${name}[\\s\\S]*?\\n\\n([\\s\\S]*?)(?=\\n### |\\n---|$)`,
+                'i'
+              );
+              const match = body.match(re);
+              return match ? match[1].trim() : '';
+            };
+            const manufacturer = readField('Manufacturer');
+            const model = readField('Model name');
+            let jsonBlock = readField('Fixture JSON');
+            const fence = jsonBlock.match(/```(?:json)?\\s*([\\s\\S]*?)```/i);
+            if (fence) jsonBlock = fence[1].trim();
+            const slugify = (value) => {
+              const trimmed = (value || '').trim().toLowerCase();
+              if (!trimmed) return 'custom';
+              const ascii = trimmed.normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '');
+              const slug = ascii.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+              return slug || 'custom';
+            };
+            if (!manufacturer || !model || !jsonBlock) {
+              core.setFailed('Missing manufacturer, model, or fixture JSON.');
+              return;
+            }
+            let parsed;
+            try {
+              parsed = JSON.parse(jsonBlock);
+            } catch (e) {
+              core.setFailed('Fixture JSON is not valid JSON.');
+              return;
+            }
+            const fixtures = Array.isArray(parsed.fixtures)
+              ? parsed.fixtures
+              : Array.isArray(parsed)
+                ? parsed
+                : parsed.fixture
+                  ? [parsed.fixture]
+                  : [];
+            if (fixtures.length === 0) {
+              core.setFailed('No fixtures found in JSON (expected fixtures array).');
+              return;
+            }
+            const library = {
+              schema: 'captivate.fixture-library',
+              version: 2,
+              fixtures,
+            };
+            const relPath = `fixtures/${slugify(manufacturer)}/${slugify(model)}.json`;
+            const serialized = JSON.stringify(library, null, 2);
+            core.setOutput('manufacturer', manufacturer);
+            core.setOutput('model', model);
+            core.setOutput('path', relPath);
+            core.setOutput('content_b64', Buffer.from(serialized, 'utf8').toString('base64'));
+            core.setOutput('issue_number', String(issue.number));
+
+      - name: Checkout
+        if: success() && steps.parse.outputs.path != ''
+        uses: actions/checkout@v4
+
+      - name: Write fixture file
+        if: success() && steps.parse.outputs.path != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const relPath = '${{ steps.parse.outputs.path }}';
+            const content = Buffer.from(
+              '${{ steps.parse.outputs.content_b64 }}',
+              'base64'
+            ).toString('utf8');
+            fs.mkdirSync(path.dirname(relPath), { recursive: true });
+            fs.writeFileSync(relPath, content, 'utf8');
+
+      - name: Create pull request
+        if: success() && steps.parse.outputs.path != ''
+        uses: peter-evans/create-pull-request@v6
+        id: cpr
+        with:
+          commit-message: 'Add fixture: ${{ steps.parse.outputs.manufacturer }} ${{ steps.parse.outputs.model }}'
+          branch: fixture/issue-${{ steps.parse.outputs.issue_number }}
+          delete-branch: true
+          title: 'Fixture: ${{ steps.parse.outputs.manufacturer }} — ${{ steps.parse.outputs.model }}'
+          body: |
+            Automated PR from issue #${{ steps.parse.outputs.issue_number }}.
+
+            **Manufacturer:** ${{ steps.parse.outputs.manufacturer }}
+            **Model:** ${{ steps.parse.outputs.model }}
+            **Path:** `${{ steps.parse.outputs.path }}`
+          labels: fixture-submission
+
+      - name: Comment on issue
+        if: success() && steps.cpr.outputs.pull-request-number != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body:
+                `Thanks! Opened pull request #${{ steps.cpr.outputs.pull-request-number }} for \`${{ steps.parse.outputs.path }}\`. A maintainer will review and merge — you do not need to open a PR yourself.`
+            });
+
+      - name: Comment on parse failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body:
+                'Could not create a pull request automatically. Check that **Fixture JSON** is valid Captivate library JSON (use **Share to Library…** in Captivate to export).'
+            });
