@@ -1,35 +1,32 @@
 # Captivate Community Fixture Library
 
-Native [Captivate 2](https://github.com/NicholasTracy/captivate-2) fixture definitions shared by the community.
+Community-built [Captivate 2](https://github.com/NicholasTracy/captivate-2) fixture definitions—ready to import by manufacturer and model.
 
-## Browse in Captivate
+## Use fixtures in Captivate
 
-**Fixtures → Add → Search For Fixture Online → Captivate Community Library**
+1. **Fixtures** → **Add** (+) → **Search For Fixture Online**
+2. **Source:** **Captivate Community Library**
+3. Choose **manufacturer** → **model** → **Import**
 
-Filter by manufacturer, then model; import adds the definition to your project.
+Also available in the same dialog: **QLC+ Fixture Library** and **Open Fixture Library**.
 
-## Contribute
+## Submit a fixture
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+You do **not** need git or to open a pull request.
 
-Quick path from Captivate:
+### From Captivate (recommended)
 
-1. Edit your fixture (manufacturer + model name required).
-2. **Share to Library…** → export JSON.
-3. Open a pull request adding the file under `fixtures/{manufacturer}/{model}.json`.
+1. Build and test your fixture; set **Manufacturer** and **Fixture Name**.
+2. **Share to Library…** → **Submit to Library**
+3. Sign in to GitHub when prompted, then confirm in Captivate.
+4. You receive a link to your submission; maintainers review and add it to the library.
 
-## Layout
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for details and the web-only path.
 
-```
-fixtures/
-  {manufacturer-slug}/
-    {model-slug}.json
-```
+## Repository
 
-Use lowercase slugs with hyphens (e.g. `chauvet/colorado-solo.json`).
-
-Each JSON file is a Captivate fixture library document (`schema`: `captivate.fixture-library`, `version`: `2`).
+Fixtures live under `fixtures/{manufacturer}/{model}.json`. Submissions are reviewed before they appear in Captivate’s online browser.
 
 ## License
 
-Contributions are accepted under the same license as this repository (see LICENSE). Only submit fixtures you have the right to share.
+Contributions are under the license in [LICENSE](./LICENSE). Only share fixtures you have the right to distribute.
