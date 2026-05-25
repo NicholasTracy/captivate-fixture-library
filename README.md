@@ -19,13 +19,13 @@ You do **not** need git or to open a pull request.
 1. Build and test your fixture; set **Manufacturer** and **Fixture Name**.
 2. **Share to Library…** → **Submit to Library**
 3. Sign in to GitHub when prompted, then confirm in Captivate.
-4. You receive a link to your submission; maintainers review and add it to the library.
+4. The library bot validates and merges your pull request automatically (no self-approval needed).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for details and the web-only path.
 
 ## Repository
 
-Fixtures live under `fixtures/{manufacturer}/{model}.json`. Submissions are reviewed before they appear in Captivate’s online browser.
+Fixtures live under `fixtures/{manufacturer}/{model}.json`. New submissions are validated by GitHub Actions and merged when checks pass.
 
 ## License
 
