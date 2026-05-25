@@ -175,10 +175,29 @@ jobs:
               core.setFailed(merge.message ?? 'Merge failed.');
               return;
             }
+
+            const headRef = '${{ steps.pr.outputs.head_ref }}'.trim();
+            if (headRef && headRef !== 'main' && headRef !== 'master') {
+              try {
+                await github.rest.git.deleteRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: `heads/${headRef}`,
+                });
+                core.info(`Deleted branch ${headRef}.`);
+              } catch (err) {
+                if (err.status === 422 || err.status === 404) {
+                  core.info(`Branch ${headRef} already removed: ${err.message}`);
+                } else {
+                  throw err;
+                }
+              }
+            }
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
               body:
-                `Merged automatically after validation (\`${{ steps.validate.outputs.path }}\`, ${{ steps.validate.outputs.fixture_count }} fixture(s)). It will appear in **Captivate Community Library** after a short refresh.`,
+                `Merged automatically after validation (\`${{ steps.validate.outputs.path }}\`, ${{ steps.validate.outputs.fixture_count }} fixture(s)). The submission branch was deleted. It will appear in **Captivate Community Library** after a short refresh.`,
             });

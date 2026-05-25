@@ -9,7 +9,9 @@ Community fixture pull requests are handled by GitHub Actions — you do **not**
 | **Fixture PR validate and merge** | PR from branch `fixture/*` or label `fixture-submission` |
 | **Fixture issue to PR** | Issue submitted via web form (backup path) |
 
-After checks pass, the **github-actions** bot approves and **squash-merges** the PR.
+After checks pass, the **github-actions** bot approves and **squash-merges** the PR, then **deletes the head branch** (`fixture/*`, `fixture/issue-*`, etc.).
+
+Enable **Settings → General → Pull Requests → Automatically delete head branches** as a backup (recommended).
 
 ## One-time repo settings
 
