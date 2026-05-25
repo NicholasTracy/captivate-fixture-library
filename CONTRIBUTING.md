@@ -12,7 +12,9 @@ Thank you for sharing a Captivate fixture with the community. You do **not** nee
 6. When asked, **sign in to GitHub** and enter the verification code (Captivate copies it for you).
 7. Click **OK** in Captivate after you have authorized on GitHub.
 
-Captivate confirms when your submission is received. Maintainers review it and publish it to the library. You will not be asked to open a pull request.
+Captivate confirms when the pull request is opened. A GitHub Actions bot **validates and merges** it automatically — you do not approve your own PR.
+
+See [.github/MAINTAINERS.md](.github/MAINTAINERS.md) if automation needs to be enabled on the repo.
 
 ## Submit from the web
 
